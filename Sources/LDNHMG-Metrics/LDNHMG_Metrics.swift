@@ -1,2 +1,16 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
+
+import FirebaseAnalytics
+
+
+public class FB_Analytics {
+    
+    public init (){}
+    
+    func logEvent(name: String, parameters: [String: Any]) {
+        Analytics.logEvent(name, parameters: parameters)
+    }
+    
+    func printHello() {
+        print("Hello Ethan Mofokeng")
+    }
+}
