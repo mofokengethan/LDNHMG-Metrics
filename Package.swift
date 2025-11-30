@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "LDNHMG-Metrics",
+    platforms: [
+           .iOS(.v15)          // <-- Required for FirebaseAnalytics
+       ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -12,6 +15,7 @@ let package = Package(
             targets: ["LDNHMG-Metrics"]
         ),
     ],
+    
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // package(url: /* package url */, from: "1.0.0")
